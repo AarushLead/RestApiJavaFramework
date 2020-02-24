@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EmployeeRESTAPISuite">
+	<test thread-count="5" name="employeeRestAPITest">
+		<classes>
+			<class name="com.api.testcase.TC001_Get_All_Employees"></class>
+			<class name="com.api.testcase.TC003_POST_Employee_Record"></class>
+			<class name="com.api.testcase.TC004_PUT_Employee_Record"></class>
+		</classes>
+	</test>
+</suite>
