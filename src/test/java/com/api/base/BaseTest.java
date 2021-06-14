@@ -4,7 +4,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.BeforeClass;
-
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -19,7 +18,7 @@ public class BaseTest {
 	public void setUp()
 	{
 	  String logPath=System.getProperty("user.dir")+"/src/test/resources";
-	  logger=Logger.getLogger("EmployeeRestAPI");            //Logger
+	  logger=Logger.getLogger("APIExecutionLog");
 	  PropertyConfigurator.configure(logPath+"/log4j.properties");    //Logger
 	  logger.setLevel(Level.DEBUG);
 	}

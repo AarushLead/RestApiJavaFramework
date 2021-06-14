@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.595 s - in TestSuite
+Tests run: 23, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 19.946 s <<< FAILURE! - in TestSuite
+checkResponseTime(com.api.testcase.TC001_Get_All_Employees)  Time elapsed: 0.035 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.api.testcase.TC001_Get_All_Employees.checkResponseTime(TC001_Get_All_Employees.java:62)
+
+checkContentType(com.api.testcase.TC003_POST_Employee_Record)  Time elapsed: 0.089 s  <<< FAILURE!
+java.lang.AssertionError: expected [application/json;charset=utf-8] but found [application/json]
+	at com.api.testcase.TC003_POST_Employee_Record.checkContentType(TC003_POST_Employee_Record.java:89)
+
+checkResponseTime(com.api.testcase.TC003_POST_Employee_Record)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.api.testcase.TC003_POST_Employee_Record.checkResponseTime(TC003_POST_Employee_Record.java:71)
+
+checkContentType(com.api.testcase.TC004_PUT_Employee_Record)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: expected [application/json;charset=utf-8] but found [application/json]
+	at com.api.testcase.TC004_PUT_Employee_Record.checkContentType(TC004_PUT_Employee_Record.java:88)
+
